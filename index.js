@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
         });
         
         req.on('end', function () {
-          if (req.url == "/Website/API/Data.json") {
+          if (req.url == "/API/Data.json") {
             Statsjs.run(body);
             return;
           }
