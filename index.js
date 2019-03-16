@@ -27,6 +27,7 @@ const mimeType = {
 };
 
 http.createServer(function (req, res) {
+  console.log(req)
   if (req.method == "POST") {
     //95206881
     if (!JSON.stringify(req.rawHeaders).includes(2954706683)) {
