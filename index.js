@@ -5,6 +5,7 @@ const path = require('path');
 
 const Statsjs = require("./Modules/Stats.js");
 
+console.log("Starting")
 
 const port = process.argv[2] || 9000;
 
