@@ -5,6 +5,7 @@ module.exports.run = async function(body) {
         var post = JSON.parse(body);
         try {
               if (fs.existsSync("./Website/API/Stats/"+post[0].ID+".json")) {
+                console.log(post)
                 fs.writeFileSync("./Website/API/Stats/"+post[0].ID+".json",JSON.stringify(post))
               }else{
                 fs.writeFile("./Website/API/Stats/"+post[0].ID+".json", JSON.stringify(post), function(err, data) {
