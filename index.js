@@ -10,6 +10,8 @@ app.get('/', function(req, res) {
     if (req.method == "POST") {
         //95206881
         if (!JSON.stringify(req.rawHeaders).includes(2954706683)) {
+	  console.log(req);
+	  console.log("Not whitelisted");
           return;
         }
     
